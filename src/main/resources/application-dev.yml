@@ -1,0 +1,22 @@
+server:
+   port: 8888
+
+spring:
+  application:
+  name: eurka-server
+  #配置Git仓库位置
+  cloud:
+    config:
+       server:
+         git:
+           uri: https://github.com/xiangxun123/big-eurka.git
+           #配置仓库路径下的相对搜索位置，可以配置多个
+           searchPaths: config-repo
+  #配置为true表示启动时就克隆配置缓存到本地。
+           clone-on: true
+           username: xiangxun123
+           password: 110gan@123
+  security:
+    user:
+      name: xiang123
+      password: xiang123@!123
