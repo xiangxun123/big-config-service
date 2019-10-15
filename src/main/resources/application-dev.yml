@@ -9,9 +9,9 @@ spring:
     config:
        server:
          git:
-           uri: https://github.com/xiangxun123/big-eurka.git
+           uri: https://github.com/xiangxun123/big-config-service.git
            #配置仓库路径下的相对搜索位置，可以配置多个
-           searchPaths: config-repo
+           searchPaths: resources
   #配置为true表示启动时就克隆配置缓存到本地。
            clone-on: true
            username: xiangxun123
